@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+    container_name: node-express-template-dev
+    env_file:
+      - .env.dev
+    ports:
+      - "${VITE_EXPOSED_HOST}:${VITE_EXPOSED_PORT}:3000"
+    volumes:
+      - ./src:/app/src
+    command: npm run dev

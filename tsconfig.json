@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "outDir": "./build",
+    "allowJs": true,
+    "target": "ES5",
+    "strict": true
+  },
+  "ts-node": {
+    "files": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}

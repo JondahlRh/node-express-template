@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+    container_name: node-express-template
+    env_file:
+      - .env.prod
+    ports:
+      - "${VITE_EXPOSED_HOST}:${VITE_EXPOSED_PORT}:3000"
